@@ -7,7 +7,6 @@ use std::{
 use std::collections::HashMap;
 
 pub fn shredded_papers() {
-
     let shredded_tuples = tuples_from_lines(lines_from_file("resources/ShreddedSheetOfPaper.txt"));
     let blank_tuples = tuples_from_lines(lines_from_file("resources/BlankSheetOfPaper.txt"));
     let map:HashMap<String, String> = shredded_tuples.into_iter().collect();
@@ -19,7 +18,6 @@ pub fn shredded_papers() {
     }
 
     write("resources/Unshredded.txt", data).expect("Unable to write file");
-
 }
 
 // get tuples from lines
