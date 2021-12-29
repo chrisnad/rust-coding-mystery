@@ -1,6 +1,4 @@
-mod the_office;
-
-fn main() {
+fn the_secret_tunnels() {
     println!("Hello, world!");
     the_office::shredded_papers();
 }
